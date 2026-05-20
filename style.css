@@ -1,0 +1,242 @@
+:root {
+    --biru-logo: #295eb5;
+    --biru-gelap:#1a4082;
+    --abu-logo: #dadddf;
+    --putih: #ffffff;
+    --teks-gelap: #333333;
+    --teks-terang: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth;
+
+  
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: var(--teks-gelap);
+    background-color:var(--putih);
+    line-height: 1.6;
+}
+.container {
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 0 20px;
+}
+.section {
+    padding: 100px 0;
+}
+.bg-light {
+    background-color: #f8f9fa;
+}
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--biru-logo);
+    margin-bottom: 50px;
+}
+.navbar {
+    background-color: var(--putih);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    
+}
+
+.nav-container {
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-logo-img {
+    height: 30px;
+    width: auto;
+    display:block;
+   
+ }
+
+.nav-links{
+  list-style: none;
+  display:flex;
+  gap: 30px;
+}  
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--teks-gelap);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: var(--biru-logo);
+}
+
+.hero-section{
+    height: 100vh;
+    background-color: var(--biru-logo);
+    color: var(--putih);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-logo-img {
+    height: 180px;
+    width: auto;
+    margin-bottom: 25px;
+    filter: drop-shadow(0px 5px 15px
+    rgba(0,0,0,0,3));
+}
+.hero-section h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.hero-section p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+.hero-section p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--putih);
+    color: var(--biru-logo);
+}
+
+.btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 2px solid var(--putih);
+    color: var(--putih);
+}
+
+.btn-secondary:hover {
+    background-color: var(--putih);
+    color: var(--biru-logo);
+}
+.visi-misi-wrapper{
+    display: flex;
+    gap: 40px;
+}
+.box {
+    flex: 1;
+    background-color: var(--putih);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--biru-logo); 
+}
+.box h3 {
+    color: var(--biru-logo);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.box ul {
+    margin-left: 20px;
+    color: var(--teks-terang);
+}
+
+.box p {
+    color: var(--teks-terang);
+}
+.about-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--teks-terang);
+}
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+.grid-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: var(--putih);
+    padding: 40px 30px;
+    border-radius: 12;
+    box-shadow: 0 10px 30px rgba(0,0,0,0,08);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card-icon{
+    font-size: 3.5;
+    margin-bottom: 15px;
+}
+.card h3{
+    color: var(--biru-logo);
+    margin-bottom: 15px;
+
+}
+.card p{
+    color: var(--teks-terang);
+    font-size: 0.9rem;
+}
+
+.kontak-wrapper{
+    text-align: center;
+}
+.kontak-info{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--biru-logo);
+}
+.footer {
+    background-color: var(--biru-gelap);
+    color: var(--putih);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+}
